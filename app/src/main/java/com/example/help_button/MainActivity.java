@@ -12,6 +12,9 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 import android.widget.Button;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Toolbar myToolbar = (Toolbar) findViewById(R.my_toolbar);
-        //setSupportActionBar(myToolbar);
+        Toolbar myToolbar = findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
 
         Spinner spinner = findViewById(R.id.spinner_names);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.Names, android.R.layout.simple_spinner_item);
