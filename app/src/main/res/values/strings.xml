@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Help_Button</string>
+    <string name="btnSend">Send SMS</string>
+
+    <string-array name="Names">
+        <item>Callum</item>
+        <item>Ross</item>
+        <item>Nathan</item>
+    </string-array>
+
+</resources>
